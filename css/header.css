@@ -1,0 +1,77 @@
+header {
+    width: 100%;
+    height: auto;
+
+    padding: 40px 131px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    cursor: pointer;
+}
+
+.mobile-btn {
+    position: relative;
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 5;
+}
+
+.mobile-btn span {
+    width: 46px;
+    height: 3.5px;
+
+    border-radius: 5px;
+    background-color: #fff;
+
+    transition: all 0.6s ease-in-out;
+}
+
+.mobile-btn span::after,
+.mobile-btn span::before {
+    content: '';
+    position: absolute;
+    width: 46px;
+    height: 3.5px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.6s ease-in-out;
+}
+
+.mobile-btn span::before {
+    transform: translateY(-16px);
+}
+
+.mobile-btn span::after {
+    transform: translateY(16px);
+}
+
+.mobile-btn.active span {
+    transform: translateX(-46px);
+    pointer-events: none;
+    background: transparent;
+}
+
+.mobile-btn.active span::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.mobile-btn.active span::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media screen and (max-width: 1030px) {
+   header {
+    padding: 40px 40px
+   }
+}
+

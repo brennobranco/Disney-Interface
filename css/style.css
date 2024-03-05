@@ -1,0 +1,44 @@
+@import url(./header.css);
+@import url(./info.css);
+@import url(./movies.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main { 
+    width: 100%;
+    min-width: 278px;
+    height: calc(100vh - 154px);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 131px;
+}
+
+@media screen and (max-width: 1030px) {
+    main {
+     padding: 0px 40px
+    }
+ }
+
+ @media screen and (max-width: 390px) {
+    main {
+        padding: 0 0px;
+    }
+ }
