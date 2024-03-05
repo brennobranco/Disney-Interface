@@ -122,7 +122,8 @@
 @media screen and (max-width: 390px) {
     #ano,
     #classificacao,
-    #tipo {
+    #tipo,
+    #rating_number {
         font-size: 16px;
     }
 
@@ -132,8 +133,10 @@
     }
 
     #descricao {
-        font-size: 15px;
-        height: 210px;
+        font-size: 12px;
+        height: 150px;
+
+        line-height: 23px;
     }
 
     #info_section {
@@ -142,9 +145,20 @@
 
     #info_section button {
         margin-top: 10px;
-        padding: 12px 20px;
+        padding: 0px 16px;
+        font-size: 12px;
+        display: flex;
+        gap: 5px;
 
-        width: 180px;
+        width: 145px;
+    }
+
+    #info_section button img {
+        width: 15px;
+    } 
+    
+    .rating img {
+        width: 40px;
     }
 }
 

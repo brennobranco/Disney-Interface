@@ -78,7 +78,7 @@ function ratingFormater (elem) {
         return newNumber
     }else {
         newNumber = Number(newNumber) + 0.1
-        return newNumber
+        return Number(newNumber).toFixed(1)
     }
 }
 
