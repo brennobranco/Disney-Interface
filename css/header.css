@@ -78,7 +78,7 @@ header img {
    }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 415px) {
     .mobile-btn span::after,
     .mobile-btn span::before,
     .mobile-btn span {
@@ -97,5 +97,15 @@ header img {
     .mobile-btn.active {
         transition: 1s;
         transform: translateX(25px);
+    }
+}
+
+@media screen and (max-width: 321px) {
+    header img {
+        width: 90px;
+    }
+
+    header {
+        padding: 20px 30px;
     }
 }
